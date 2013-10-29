@@ -25,7 +25,7 @@ namespace MigrationItemTemplateWizard
 
     public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
     {
-      var timestamp = DateTime.Now.ToString("yyyyMMddhhmmss");
+      var timestamp = DateTime.Now.ToString("yyyyMMddHHmmss");
       replacementsDictionary["$migrationtimestamp$"] = timestamp;
       replacementsDictionary["$migrationclassname$"] = replacementsDictionary["$safeitemname$"];
       replacementsDictionary["$migrationfilename$"] = String.Format("{0}_{1}.cs", timestamp, replacementsDictionary["$safeitemname$"]);
