@@ -19,7 +19,7 @@
     <ProjectItem ReplaceParameters="true" TargetFileName="$migrationfilename$">Class.cs</ProjectItem>
   </TemplateContent>
   <WizardExtension>
-    <Assembly>MigrationItemTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ad3defdd7fbcc543</Assembly>
+    <Assembly>MigrationItemTemplateWizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=eb325c7c5ff864b8</Assembly>
     <FullClassName>MigrationItemTemplateWizard.MigrationWizard</FullClassName>
   </WizardExtension>
 </VSTemplate>
