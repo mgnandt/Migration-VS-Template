@@ -1,19 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="MigrationVSIX..4245a7e1-03a6-47b4-96e6-c740fc15d4c5" Version="1.3" Language="en-US" Publisher="Mike Gnandt" />
-    <DisplayName>FluentMigrator Migration Item Template</DisplayName>
-    <Description xml:space="preserve">Adds an item template for a migration class that automatically inserts the current timestamp in the filename and migration attribute.</Description>
-    <License>mit_license.txt</License>
-  </Metadata>
-  <Installation>
-    <InstallationTarget Version="[11.0,13.0)" Id="Microsoft.VisualStudio.Premium" />
-  </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
-  </Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="MigrationItemTemplate" d:TargetPath="|MigrationItemTemplate;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
-    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="MigrationItemTemplateWizard" Path="|MigrationItemTemplateWizard|" AssemblyName="|MigrationItemTemplateWizard;AssemblyName|" />
-  </Assets>
+    <Metadata>
+        <Identity Id="MigrationVSIX..4245a7e1-03a6-47b4-96e6-c740fc15d4c5" Version="1.6" Language="en-US" Publisher="Mike Gnandt" />
+        <DisplayName>FluentMigrator Migration Item Template</DisplayName>
+        <Description xml:space="preserve">Adds an item template for a migration class that automatically inserts the current timestamp in the filename and migration attribute.</Description>
+        <License>mit_license.txt</License>
+    </Metadata>
+    <Installation>
+        <InstallationTarget Version="[14.0,17.0)" Id="Microsoft.VisualStudio.Community" />
+        <InstallationTarget Version="[14.0,17.0)" Id="Microsoft.VisualStudio.Pro" />
+        <InstallationTarget Version="[14.0,17.0)" Id="Microsoft.VisualStudio.Enterprise" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="4.5" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.ItemTemplate" d:Source="Project" d:ProjectName="MigrationItemTemplate" d:TargetPath="|MigrationItemTemplate;TemplateProjectOutputGroup|" Path="ItemTemplates" d:VsixSubPath="ItemTemplates" />
+        <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="MigrationItemTemplateWizard" Path="|MigrationItemTemplateWizard|" AssemblyName="|MigrationItemTemplateWizard;AssemblyName|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" DisplayName="Visual Studio core editor" Version="[14.0,17.0)" />
+        <Prerequisite Id="Microsoft.VisualStudio.Component.Roslyn.LanguageServices" Version="[14.0,17.0)" DisplayName="C# and Visual Basic" />
+    </Prerequisites>
 </PackageManifest>
